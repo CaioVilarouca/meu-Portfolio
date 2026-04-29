@@ -311,3 +311,25 @@ img {
     font-size: var(--small-font-size);
     transform: rotate(-90deg);
 }
+
+/* ================ BUTTONS ================ */
+.button {
+    display: inline-block;
+    background-color: var(--first-color);
+    color: var(--body-color);
+    padding: .75rem 1rem;
+    border-radius: .5rem;
+    font-weight: var(--font-medium);
+    transition: .4s;
+}
+
+.button-gost {
+    background-color: transparent;
+    border: 2px solid var(--first-color);
+    color: var(--first-color);
+}
+
+.button:hover {
+    background-color: var(--first-color-alt);
+    color: var(--body-color);
+}
