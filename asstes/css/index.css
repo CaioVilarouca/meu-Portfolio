@@ -393,3 +393,8 @@ img {
 .about-description {
     margin-bottom: 2rem;
 }
+
+/* Change background header */
+.scroll-header {
+    box-shadow: 0 4px 4px hsla(0, 0%, 4%, .3);
+}
