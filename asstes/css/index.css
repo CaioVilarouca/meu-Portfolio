@@ -398,3 +398,53 @@ img {
 .scroll-header {
     box-shadow: 0 4px 4px hsla(0, 0%, 4%, .3);
 }
+
+/* ================ SKILLS ================ */
+.skills-container {
+    row-gap: 2rem;
+    /*remover*/
+    padding-top: 1rem;
+}
+
+.skills-content {
+    background-color: var(--container-color);
+    padding: 1.5rem;
+    border-radius: 1.25rem;
+    margin-top: 1rem;
+}
+
+.skills-title {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    color: var(--first-color);
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.skills-box {
+    display: flex;
+    justify-content: center;
+    column-gap: 2.5rem;
+}
+
+.skills-group {
+    display: grid;
+    align-content: flex-start;
+    row-gap: 1rem;
+}
+
+.skills-data {
+    display: flex;
+    column-gap: .5rem;
+}
+
+.skills .ri-verified-badge-fill {
+    font-size: 1rem;
+    color: var(--first-color);
+}
+
+.skills-name {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    line-height: 18px;
+}
