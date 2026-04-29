@@ -542,6 +542,14 @@ img {
     font-size: var(--small-font-size);
 }
 
+.services-modal-info a{
+    color: var(--first-color);
+}
+
+.services-modal-info a:hover{
+    color: #fff;
+}
+
 .services-modal-close {
     position: absolute;
     top: 1.5rem;
