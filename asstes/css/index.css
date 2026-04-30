@@ -659,3 +659,7 @@ img {
 .contact-form-area {
     height: 11rem;
 }
+
+.contact-form-area textarea {
+    resize: none;
+}
