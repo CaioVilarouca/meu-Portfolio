@@ -51,3 +51,5 @@ function scrollActive(){
     })
 }
 window.addEventListener('scroll', scrollActive)
+
+/* ======== SCROLL SECTIONS ACTIVE LINK ======== */
