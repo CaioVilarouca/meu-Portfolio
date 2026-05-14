@@ -625,61 +625,6 @@ img {
     transition: .4s;
 }
 
-/* Work - celular pequeno */
-@media screen and (max-width: 320px) {
-    .work-card {
-        flex-basis: 100%;
-        max-width: 280px;
-        padding: .875rem;
-    }
-
-    .work-img {
-        height: 160px;
-    }
-}
-
-/* Work - tablet */
-@media screen and (min-width: 576px) {
-    .work-container.container.grid {
-        gap: 1.5rem;
-    }
-
-    .work-card {
-        flex: 0 1 calc((100% - 1.5rem) / 2);
-        max-width: 295px;
-    }
-}
-
-/* Work - desktop */
-@media screen and (min-width: 992px) {
-    .work-container.container.grid {
-        max-width: 1100px;
-        gap: 2rem;
-    }
-
-    .work-card {
-        flex: 0 1 295px;
-        max-width: 295px;
-        padding: 1.25rem;
-    }
-
-    .work-img {
-        height: 185px;
-        margin-bottom: 1rem;
-    }
-
-    .work-title {
-        margin-bottom: .5rem;
-    }
-}
-
-/* Work - telas grandes */
-@media screen and (min-width: 1200px) {
-    .work-container.container.grid {
-        gap: 3rem;
-    }
-}
-
 /* ================ CONTACT ================ */
 .contact-container {
     row-gap: 3rem;
@@ -954,6 +899,7 @@ body.light-theme {
     }
 
     .work-card {
+        flex-basis: 100%;
         max-width: 280px;
         padding: .875rem;
     }
@@ -1001,6 +947,15 @@ body.light-theme {
 
     .services-modal-description {
         padding: 0 3.5rem;
+    }
+
+    .work-container.container.grid {
+        gap: 1.5rem;
+    }
+
+    .work-card {
+        flex: 0 1 calc((100% - 1.5rem) / 2);
+        max-width: 295px;
     }
 
     .contact-info {
@@ -1110,6 +1065,26 @@ body.light-theme {
         padding: 3.5rem 2rem 1.5rem;
     }
 
+    .work-container.container.grid {
+        max-width: 1100px;
+        gap: 2rem;
+    }
+
+    .work-card {
+        flex: 0 1 295px;
+        max-width: 295px;
+        padding: 1.25rem;
+    }
+
+    .work-img {
+        height: 185px;
+        margin-bottom: 1rem;
+    }
+
+    .work-title {
+        margin-bottom: .5rem;
+    }
+
     .contact-container {
         column-gap: 6rem;
     }
@@ -1118,5 +1093,12 @@ body.light-theme {
         font-size: 1.5rem;
         padding: .4rem;
         border-radius: .5rem;
+    }
+}
+
+/* Work - telas grandes */
+@media screen and (min-width: 1200px) {
+    .work-container.container.grid {
+        gap: 3rem;
     }
 }
