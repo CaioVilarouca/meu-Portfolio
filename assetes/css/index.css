@@ -569,19 +569,18 @@ img {
     visibility: visible;
 }
 /* ================ WORK ================ */
-.work-container {
-    width: 100%;
+.work-container.container.grid {
     padding-top: 1rem;
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    align-items: stretch;
+    gap: 1.5rem;
 }
 
 .work-card {
-    width: 100%;
+    flex: 0 1 100%;
     max-width: 320px;
-    margin-left: auto;
-    margin-right: auto;
     background-color: var(--container-color);
     padding: 1rem;
     border-radius: 1rem;
@@ -605,7 +604,7 @@ img {
 .work-title {
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
-    margin-bottom: .25rem;
+    margin-bottom: .5rem;
 }
 
 .work-button {
@@ -624,6 +623,61 @@ img {
 .work-icon {
     font-size: 1rem;
     transition: .4s;
+}
+
+/* Work - celular pequeno */
+@media screen and (max-width: 320px) {
+    .work-card {
+        flex-basis: 100%;
+        max-width: 280px;
+        padding: .875rem;
+    }
+
+    .work-img {
+        height: 160px;
+    }
+}
+
+/* Work - tablet */
+@media screen and (min-width: 576px) {
+    .work-container.container.grid {
+        gap: 1.5rem;
+    }
+
+    .work-card {
+        flex: 0 1 calc((100% - 1.5rem) / 2);
+        max-width: 295px;
+    }
+}
+
+/* Work - desktop */
+@media screen and (min-width: 992px) {
+    .work-container.container.grid {
+        max-width: 1100px;
+        gap: 2rem;
+    }
+
+    .work-card {
+        flex: 0 1 295px;
+        max-width: 295px;
+        padding: 1.25rem;
+    }
+
+    .work-img {
+        height: 185px;
+        margin-bottom: 1rem;
+    }
+
+    .work-title {
+        margin-bottom: .5rem;
+    }
+}
+
+/* Work - telas grandes */
+@media screen and (min-width: 1200px) {
+    .work-container.container.grid {
+        gap: 3rem;
+    }
 }
 
 /* ================ CONTACT ================ */
@@ -898,6 +952,15 @@ body.light-theme {
         grid-template-columns: 145px;
         justify-content: center;
     }
+
+    .work-card {
+        max-width: 280px;
+        padding: .875rem;
+    }
+
+    .work-img {
+        height: 160px;
+    }
 }
 
 /* Médio */
@@ -938,15 +1001,6 @@ body.light-theme {
 
     .services-modal-description {
         padding: 0 3.5rem;
-    }
-
-    .work-container {
-        grid-template-columns: repeat(2, 295px);
-        gap: 2rem;
-    }
-
-    .work-card {
-        max-width: 295px;
     }
 
     .contact-info {
@@ -1054,31 +1108,6 @@ body.light-theme {
 
     .services-card {
         padding: 3.5rem 2rem 1.5rem;
-    }
-
-    .work-container {
-        grid-template-columns: repeat(3, 295px);
-        justify-content: center;
-        gap: 3rem;
-    }
-
-    .work-card {
-        width: 295px;
-        max-width: 295px;
-        padding: 1.25rem;
-    }
-
-    .work-img {
-        margin-bottom: 1rem;
-    }
-
-    .work-title {
-        margin-bottom: .5rem;
-    }
-
-    /* Centraliza o 4º card na segunda linha */
-    .work-card:nth-child(4) {
-        grid-column: 2;
     }
 
     .contact-container {
